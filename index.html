@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ================= SEO ================= -->
+  <title>Sabor Norteño · Cocina norteña peruana en Miraflores, Lima</title>
+  <meta name="description" content="Restaurante de comida norteña peruana en Miraflores, Lima. Ceviches, arroz con mariscos, cabrito y postres cocinados a leña con recetas de familia. Reserva tu mesa.">
+  <meta name="keywords" content="comida norteña, restaurante peruano, ceviche, arroz con mariscos, cabrito, Miraflores, Lima, cocina del norte">
+  <meta name="author" content="Sabor Norteño">
+  <meta name="theme-color" content="#C2410C">
+  <link rel="canonical" href="https://www.sabornorteno.pe/">
+
+  <!-- Open Graph (vista previa al compartir en redes) -->
+  <meta property="og:type" content="restaurant">
+  <meta property="og:title" content="Sabor Norteño · Cocina norteña peruana en Lima">
+  <meta property="og:description" content="Ceviches, arroces y cabrito a la manera de la abuela. Cocina norteña con ají, culantro y mucho cariño en Miraflores.">
+  <meta property="og:image" content="assets/img/hero-arroz.jpg">
+  <meta property="og:locale" content="es_PE">
+
+  <!-- ============= Tipografías ============= -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- ============= Hoja de estilos ============= -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- ===== Datos estructurados del restaurante (SEO / Google) ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Sabor Norteño",
+    "description": "Restaurante de comida norteña peruana en Miraflores, Lima.",
+    "servesCuisine": "Peruana del norte",
+    "priceRange": "S/ 16 - S/ 48",
+    "image": "assets/img/hero-arroz.jpg",
+    "telephone": "+51987654321",
+    "email": "hola@sabornorteno.pe",
+    "url": "https://www.sabornorteno.pe/",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. La Paz 1234, Miraflores",
+      "addressLocality": "Lima",
+      "addressCountry": "PE"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "12:00", "closes": "22:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday","Saturday"], "opens": "12:00", "closes": "23:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "11:00", "closes": "17:00" }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- ======================= BARRA DE PROMOCIÓN ======================= -->
+  <div class="promo">
+    <strong>MARTES DE CEVICHE</strong> &nbsp;·&nbsp; 2x1 en ceviches clásicos toda la tarde &nbsp;·&nbsp; Reserva tu mesa
+  </div>
+
+  <!-- ============================ CABECERA ============================ -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#inicio" class="brand" aria-label="Sabor Norteño, ir al inicio">
+        <span class="brand-logo" aria-hidden="true">SN</span>
+        <span class="brand-text">
+          <span class="brand-name">Sabor Norteño</span>
+          <span class="brand-tagline">Cocina del norte</span>
+        </span>
+      </a>
+
+      <!-- Navegación de escritorio -->
+      <nav class="nav-desktop" aria-label="Navegación principal">
+        <a href="#carta" class="nav-link">Carta</a>
+        <a href="#nosotros" class="nav-link">Nosotros</a>
+        <a href="#ubicacion" class="nav-link">Ubicación</a>
+        <a href="#reserva" class="btn btn--primary btn--sm">Reservar</a>
+      </nav>
+
+      <!-- Botón hamburguesa (solo móvil) -->
+      <button class="burger" data-burger aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-movil">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========================= MENÚ MÓVIL ========================= -->
+  <div class="mobile-menu" id="menu-movil" data-mobile-menu role="dialog" aria-modal="true" aria-label="Menú de navegación">
+    <div class="mobile-menu__head">
+      <span class="mobile-menu__brand">Sabor Norteño</span>
+      <button class="mobile-menu__close" data-close-menu aria-label="Cerrar menú">✕</button>
+    </div>
+    <nav class="mobile-menu__nav" aria-label="Navegación móvil">
+      <a href="#carta" class="mobile-menu__link">Carta</a>
+      <a href="#nosotros" class="mobile-menu__link">Nosotros</a>
+      <a href="#ubicacion" class="mobile-menu__link">Ubicación</a>
+    </nav>
+    <a href="#reserva" class="btn btn--primary mobile-menu__cta">Reservar una mesa</a>
+  </div>
+
+  <main>
+
+    <!-- ============================= HERO ============================= -->
+    <section id="inicio" class="hero">
+      <img class="hero__img" src="assets/img/hero-arroz.jpg" alt="Plato de arroz norteño servido en la mesa" fetchpriority="high">
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <span class="badge">Chiclayo · Trujillo · Piura</span>
+        <h1 class="hero__title">El sabor bravo del norte, en Lima</h1>
+        <p class="hero__text">Ceviches, arroces y cabrito cocidos a la manera de la abuela. Cocina norteña con ají, culantro y mucho cariño.</p>
+        <div class="hero__actions">
+          <a href="#reserva" class="btn btn--primary">Reservar mesa</a>
+          <a href="#carta" class="btn btn--outline">Ver la carta</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FRANJA DE SELLOS ==================== -->
+    <div class="strip">
+      <div class="strip__inner">
+        <span>Cocina a leña</span><span class="strip__sep" aria-hidden="true">◆</span>
+        <span>Pescado del día</span><span class="strip__sep" aria-hidden="true">◆</span>
+        <span>Recetas de familia</span><span class="strip__sep" aria-hidden="true">◆</span>
+        <span>Ají fresco todos los días</span>
+      </div>
+    </div>
+
+    <!-- ============================= CARTA ============================= -->
+    <section id="carta" class="section">
+      <div class="section-head">
+        <span class="eyebrow">Nuestra carta</span>
+        <h2 class="section-title">Del norte a tu mesa</h2>
+        <p class="section-desc">Platos preparados al momento. Precios en soles (S/), incluye IGV.</p>
+      </div>
+
+      <!-- Botones de filtro por categoría (detalle interactivo principal).
+           role="group" agrupa los botones para lectores de pantalla. -->
+      <div class="filtros" role="group" aria-label="Filtrar la carta por categoría">
+        <button class="filtro-btn is-active" data-filtro="todos"    aria-pressed="true">Todos</button>
+        <button class="filtro-btn"           data-filtro="entradas" aria-pressed="false">Entradas</button>
+        <button class="filtro-btn"           data-filtro="fondo"    aria-pressed="false">Platos de fondo</button>
+        <button class="filtro-btn"           data-filtro="bebidas"  aria-pressed="false">Bebidas</button>
+        <button class="filtro-btn"           data-filtro="postres"  aria-pressed="false">Postres</button>
+      </div>
+
+      <!-- ---------- ENTRADAS ---------- -->
+      <div class="carta-cat" data-categoria="entradas">
+        <div class="cat-head">
+          <h3 class="cat-title">Entradas</h3>
+          <span class="cat-rule" aria-hidden="true"></span>
+        </div>
+        <div class="platos-grid">
+
+          <article class="plato">
+            <div class="plato__media">
+              <img class="plato__img" src="assets/img/ceviche-mero.jpg" alt="Ceviche norteño de mero con camote y cancha" loading="lazy">
+              <span class="plato__badge">El favorito</span>
+            </div>
+            <div class="plato__body">
+              <div class="plato__row">
+                <h4 class="plato__name">Ceviche Norteño de Mero</h4>
+                <span class="plato__price">S/ 42</span>
+              </div>
+              <p class="plato__desc">Mero fresco en leche de tigre de ají limo, cebolla morada, camote glaseado y cancha serrana.</p>
+            </div>
+          </article>
+
+          <article class="plato">
+            <div class="plato__media">
+              <img class="plato__img" src="assets/img/ensalada-nortena.jpg" alt="Ensalada norteña con pescado a la parrilla" loading="lazy">
+            </div>
+            <div class="plato__body">
+              <div class="plato__row">
+                <h4 class="plato__name">Ensalada Norteña</h4>
+                <span class="plato__price">S/ 34</span>
+              </div>
+              <p class="plato__desc">Hojas frescas, choclo, palta, huevo y pescado a la parrilla con vinagreta de rocoto.</p>
+            </div>
+          </article>
+
+          <article class="plato">
+            <div class="plato__media">
+              <img class="plato__img" src="assets/img/chicharron-pescado.jpg" alt="Chicharrón de pescado crocante con salsa criolla" loading="lazy">
+            </div>
+            <div class="plato__body">
+              <div class="plato__row">
+                <h4 class="plato__name">Chicharrón de Pescado</h4>
+                <span class="plato__price">S/ 38</span>
+              </div>
+              <p class="plato__desc">Trozos de pescado del norte fritos y crocantes, con salsa criolla y mayonesa de rocoto.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- ---------- PLATOS DE FONDO ---------- -->
+      <div class="carta-cat" data-categoria="fondo">
+        <div class="cat-head">
+          <h3 class="cat-title">Platos de fondo</h3>
+          <span class="cat-rule" aria-hidden="true"></span>
+        </div>
+        <div class="platos-grid">
+
+          <article class="plato">
+            <div class="plato__media">
+              <img class="plato__img" src="assets/img/arroz-con-mariscos.jpg" alt="Arroz con mariscos servido en plato hondo" loading="lazy">
+              <span class="plato__badge plato__badge--alt">La casa</span>
+            </div>
+            <div class="plato__body">
+              <div class="plato__row">
+                <h4 class="plato__name">Arroz con Mariscos</h4>
+                <span class="plato__price">S/ 46</span>
+              </div>
+              <p class="plato__desc">Arroz graneado salteado con mariscos frescos, ají amarillo, culantro y un toque de limón.</p>
+            </div>
+          </article>
+
+          <article class="plato">
+            <div class="plato__media">
+              <img class="plato__img" src="assets/img/costillar-lena.jpg" alt="Costillar de cerdo a la leña con ensalada criolla" loading="lazy">
+            </div>
+            <div class="plato__body">
+              <div class="plato__row">
+                <h4 class="plato__name">Costillar Norteño a la Leña</h4>
+                <span class="plato__price">S/ 48</span>
+              </div>
+              <p class="plato__desc">Costillar de cerdo cocido a la leña, glaseado en chicha de jora, con ensalada criolla y camote.</p>
+            </div>
+          </article>
+
+          <article class="plato">
+            <div class="plato__media">
+              <img class="plato__img" src="assets/img/sudado-tramboyo.jpg" alt="Sudado de pescado en salsa de tomate y ají amarillo" loading="lazy">
+            </div>
+            <div class="plato__body">
+              <div class="plato__row">
+                <h4 class="plato__name">Sudado de Tramboyo</h4>
+                <span class="plato__price">S/ 44</span>
+              </div>
+              <p class="plato__desc">Pescado del día sudado en tomate, ají amarillo y culantro, con yuca sancochada.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- ---------- BEBIDAS ---------- -->
+      <div class="carta-cat" data-categoria="bebidas">
+        <div class="cat-head">
+          <h3 class="cat-title">Bebidas</h3>
+          <span class="cat-rule" aria-hidden="true"></span>
+        </div>
+        <div class="platos-grid">
+
+          <article class="plato">
+            <div class="plato__media">
+              <img class="plato__img" src="assets/img/chicha-morada.jpg" alt="Vaso de chicha morada con hielo" loading="lazy">
+            </div>
+            <div class="plato__body">
+              <div class="plato__row">
+                <h4 class="plato__name">Chicha Morada de la Casa</h4>
+                <span class="plato__price">S/ 12</span>
+              </div>
+              <p class="plato__desc">Maíz morado hervido con piña, canela y clavo de olor. Refrescante y bien fría.</p>
+            </div>
+          </article>
+
+          <article class="plato">
+            <div class="plato__media">
+              <img class="plato__img" src="assets/img/limonada-frozen.jpg" alt="Limonada frozen en vaso alto" loading="lazy">
+            </div>
+            <div class="plato__body">
+              <div class="plato__row">
+                <h4 class="plato__name">Limonada Frozen</h4>
+                <span class="plato__price">S/ 14</span>
+              </div>
+              <p class="plato__desc">Limón peruano batido con hielo hasta quedar espumoso. El acompañante ideal del ceviche.</p>
+            </div>
+          </article>
+
+          <article class="plato">
+            <div class="plato__media">
+              <img class="plato__img" src="assets/img/chicha-jora.jpg" alt="Jarra de chicha de jora artesanal" loading="lazy">
+            </div>
+            <div class="plato__body">
+              <div class="plato__row">
+                <h4 class="plato__name">Chicha de Jora Artesanal</h4>
+                <span class="plato__price">S/ 16</span>
+              </div>
+              <p class="plato__desc">Chicha de jora fermentada según receta norteña, servida en jarra de barro.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- ---------- POSTRES ---------- -->
+      <div class="carta-cat" data-categoria="postres">
+        <div class="cat-head">
+          <h3 class="cat-title">Postres</h3>
+          <span class="cat-rule" aria-hidden="true"></span>
+        </div>
+        <div class="platos-grid">
+
+          <article class="plato">
+            <div class="plato__media">
+              <img class="plato__img" src="assets/img/copa-manjar-fresas.jpg" alt="Copa de manjar blanco con fresas frescas" loading="lazy">
+            </div>
+            <div class="plato__body">
+              <div class="plato__row">
+                <h4 class="plato__name">Copa de Manjar y Fresas</h4>
+                <span class="plato__price">S/ 18</span>
+              </div>
+              <p class="plato__desc">Manjar blanco cremoso con fresas frescas maceradas y un toque de canela.</p>
+            </div>
+          </article>
+
+          <article class="plato">
+            <div class="plato__media">
+              <img class="plato__img" src="assets/img/tres-leches.jpg" alt="Porción de tres leches con canela" loading="lazy">
+            </div>
+            <div class="plato__body">
+              <div class="plato__row">
+                <h4 class="plato__name">Tres Leches</h4>
+                <span class="plato__price">S/ 16</span>
+              </div>
+              <p class="plato__desc">Bizcocho esponjoso bañado en tres leches, crema chantilly y canela.</p>
+            </div>
+          </article>
+
+          <article class="plato">
+            <div class="plato__media">
+              <img class="plato__img" src="assets/img/torta-chocolate.jpg" alt="Torta húmeda de chocolate con ganache" loading="lazy">
+            </div>
+            <div class="plato__body">
+              <div class="plato__row">
+                <h4 class="plato__name">Torta Húmeda de Chocolate</h4>
+                <span class="plato__price">S/ 20</span>
+              </div>
+              <p class="plato__desc">Torta húmeda de chocolate con ganache y un toque de sal de Maras.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================== NOSOTROS =========================== -->
+    <section id="nosotros" class="nosotros">
+      <div class="nosotros__inner">
+        <div class="nosotros__media">
+          <img src="assets/img/interior-restaurante.jpg" alt="Interior acogedor del restaurante Sabor Norteño" loading="lazy">
+        </div>
+        <div>
+          <span class="eyebrow">Nuestra historia</span>
+          <h2 class="nosotros__title">Una familia norteña que cocina para recibir</h2>
+          <p class="nosotros__text">Nacimos en 2012 en una esquina de Miraflores con una sola idea: traer a Lima el sabor bravo del norte peruano. Recetas de Chiclayo, Trujillo y Piura que aprendimos en la mesa de la abuela, cocinadas a leña y servidas sin apuro.</p>
+          <p class="nosotros__text">Cada plato lleva ají fresco, culantro y el cariño de una cocina que hizo de recibir su mejor costumbre.</p>
+          <div class="stats">
+            <div class="stat">
+              <div class="stat__num">2012</div>
+              <div class="stat__label">Desde</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">3</div>
+              <div class="stat__label">Regiones en la carta</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">+50k</div>
+              <div class="stat__label">Comensales felices</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================== UBICACIÓN =========================== -->
+    <section id="ubicacion" class="section">
+      <div class="section-head">
+        <span class="eyebrow">Visítanos</span>
+        <h2 class="section-title">Dónde encontrarnos</h2>
+      </div>
+      <div class="ubicacion__grid">
+        <div class="mapa">
+          <iframe title="Mapa de ubicación de Sabor Norteño en Miraflores" src="https://www.google.com/maps?q=Av.%20La%20Paz%20Miraflores%20Lima%20Peru&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="info-col">
+          <div class="info-card">
+            <h3 class="info-card__title">Dirección</h3>
+            <p>Av. La Paz 1234, Miraflores<br>Lima, Perú</p>
+          </div>
+          <div class="info-card">
+            <h3 class="info-card__title">Horarios de atención</h3>
+            <div class="horarios">
+              <div class="horario-row horario-row--border"><span>Lunes a Jueves</span><span>12:00 – 22:00</span></div>
+              <div class="horario-row horario-row--border"><span>Viernes y Sábado</span><span>12:00 – 23:30</span></div>
+              <div class="horario-row"><span>Domingo</span><span>11:00 – 17:00</span></div>
+            </div>
+          </div>
+          <div class="contacto-card">
+            <span class="contacto-card__label">Reservas y pedidos</span>
+            <a href="tel:+51987654321" class="contacto-card__tel">+51 987 654 321</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ RESERVA ============================ -->
+    <section id="reserva" class="reserva">
+      <div class="reserva__inner">
+        <div class="reserva__body">
+          <span class="eyebrow">Reserva</span>
+          <h2 class="reserva__title">Aparta tu mesa en segundos</h2>
+          <p class="reserva__text">Completa tus datos y confirmamos tu reserva al instante por WhatsApp. También atendemos sin reserva según disponibilidad.</p>
+        </div>
+
+        <!-- El formulario NO se envía a un servidor: JS lo valida y abre
+             WhatsApp con los datos. novalidate desactiva la validación
+             nativa del navegador para usar la nuestra en español. -->
+        <form class="form" data-form-reserva novalidate>
+          <div class="form__field">
+            <label class="form__label" for="nombre">Nombre completo</label>
+            <input class="form__input" id="nombre" name="nombre" type="text" required placeholder="Ej. María Rodríguez" autocomplete="name">
+            <span class="form__error" aria-live="polite"></span>
+          </div>
+
+          <div class="form__field">
+            <label class="form__label" for="telefono">Teléfono</label>
+            <input class="form__input" id="telefono" name="telefono" type="tel" required placeholder="Ej. 987 654 321" autocomplete="tel">
+            <span class="form__error" aria-live="polite"></span>
+          </div>
+
+          <div class="form__field">
+            <label class="form__label" for="email">Correo electrónico</label>
+            <input class="form__input" id="email" name="email" type="email" required placeholder="Ej. maria@correo.com" autocomplete="email">
+            <span class="form__error" aria-live="polite"></span>
+          </div>
+
+          <div class="form__row">
+            <div class="form__field">
+              <label class="form__label" for="fecha">Fecha</label>
+              <input class="form__input" id="fecha" name="fecha" type="date" required>
+              <span class="form__error" aria-live="polite"></span>
+            </div>
+            <div class="form__field">
+              <label class="form__label" for="hora">Hora</label>
+              <input class="form__input" id="hora" name="hora" type="time" required>
+              <span class="form__error" aria-live="polite"></span>
+            </div>
+          </div>
+
+          <div class="form__field">
+            <label class="form__label" for="personas">N.º de personas</label>
+            <select class="form__select" id="personas" name="personas" required>
+              <option value="1 persona">1 persona</option>
+              <option value="2 personas">2 personas</option>
+              <option value="3 personas">3 personas</option>
+              <option value="4 personas">4 personas</option>
+              <option value="5 personas">5 personas</option>
+              <option value="6 personas">6 personas</option>
+              <option value="7 personas">7 personas</option>
+              <option value="8 o más personas">8 o más personas</option>
+            </select>
+            <span class="form__error" aria-live="polite"></span>
+          </div>
+
+          <button type="submit" class="btn btn--teal btn--block">Reservar por WhatsApp</button>
+          <p class="form__note">Te redirigimos a WhatsApp con tu reserva lista para enviar.</p>
+          <p class="form__ok" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================= PIE ============================= -->
+  <footer class="site-footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <div class="footer__brand-row">
+          <span class="brand-logo" aria-hidden="true">SN</span>
+          <span class="brand-name" style="color:#FBF4E9">Sabor Norteño</span>
+        </div>
+        <p>Cocina peruana del norte en el corazón de Miraflores. Ají, culantro y sabor de familia.</p>
+        <div class="footer__socials">
+          <a href="#inicio" class="social" aria-label="Instagram de Sabor Norteño">IG</a>
+          <a href="#inicio" class="social" aria-label="Facebook de Sabor Norteño">FB</a>
+          <a href="#inicio" class="social" aria-label="TikTok de Sabor Norteño">TT</a>
+        </div>
+      </div>
+      <div>
+        <h3 class="footer__col-title">Explora</h3>
+        <nav class="footer__links" aria-label="Enlaces del pie de página">
+          <a href="#carta">Carta</a>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#ubicacion">Ubicación</a>
+          <a href="#reserva">Reservar</a>
+        </nav>
+      </div>
+      <div>
+        <h3 class="footer__col-title">Contacto</h3>
+        <div class="footer__links">
+          <span>Av. La Paz 1234, Miraflores</span>
+          <a href="tel:+51987654321">+51 987 654 321</a>
+          <a href="mailto:hola@sabornorteno.pe">hola@sabornorteno.pe</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__bottom-inner">
+        <span>© 2026 Sabor Norteño · Restaurante ficticio</span>
+        <span>Hecho con cariño en Lima 🇵🇪</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== BOTÓN FLOTANTE WHATSAPP ==================== -->
+  <a class="wa-float" data-whatsapp href="https://wa.me/51987654321" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+    <span class="wa-float__dot" aria-hidden="true"></span>WhatsApp
+  </a>
+
+  <!-- ========================= JavaScript ========================= -->
+  <script src="js/main.js"></script>
+</body>
+</html>
