@@ -24,7 +24,7 @@ y facilita las reservas y el contacto por WhatsApp.
 ## 🖼️ Captura de pantalla
 
 <!-- Reemplaza la ruta por tu captura, por ejemplo: assets/img/screenshot.png -->
-![Captura de pantalla de Sabor Norteño](URL_DE_LA_CAPTURA)
+![Captura de pantalla de Sabor Norteño](assets/img/screenshot.png)
 
 ---
 
