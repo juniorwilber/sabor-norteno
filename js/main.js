@@ -11,7 +11,7 @@
    Número de WhatsApp del restaurante (ficticio). Cámbialo aquí una sola vez
    y se usará tanto en el botón flotante como en el formulario.
    ========================================================================= */
-const WHATSAPP_NUMERO = '51987654321';
+const WHATSAPP_NUMERO = '51999999999';
 
 // Espera a que el HTML esté cargado antes de buscar elementos.
 document.addEventListener('DOMContentLoaded', () => {
