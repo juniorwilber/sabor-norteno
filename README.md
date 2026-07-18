@@ -31,7 +31,7 @@ y facilita las reservas y el contacto por WhatsApp.
 ## 🌐 Sitio en vivo
 
 <!-- Pega aquí el enlace a la web publicada (GitHub Pages, Netlify, Vercel, etc.) -->
-🔗 [Ver web en vivo](URL_DE_LA_WEB_EN_VIVO)
+🔗 [Ver web en vivo](https://juniorwilber.github.io/sabor-norteno/)
 
 ---
 
