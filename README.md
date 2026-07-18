@@ -4,8 +4,8 @@ Landing page de una sola página para **Sabor Norteño**, un restaurante *fictic
 de comida norteña peruana (ceviches, arroz con mariscos, cabrito, postres y bebidas).
 Proyecto de portafolio para demostrar trabajo visual y comercial front-end.
 
-> Partió de un export de Claude Design y se reconstruyó como un sitio estático
-> estándar (HTML + CSS + JavaScript puro), sin dependencias ni framework.
+> Construido como un sitio estático estándar (HTML + CSS + JavaScript puro),
+> sin dependencias ni framework.
 
 **Qué resuelve:** le da al restaurante una presencia web profesional que muestra
 sus platos con fotos, comunica su propuesta ("el sabor bravo del norte, en Lima")
